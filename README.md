@@ -1,2 +1,2 @@
-# nvim
-My favorite text editor
+# nvim and vim
+Both are my favorite text editor
