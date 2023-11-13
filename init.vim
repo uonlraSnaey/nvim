@@ -3,7 +3,13 @@ call plug#begin('C:\nvim-win64\nvim-win64\share\nvim\plugged')
 " nvim 插件
 Plug 'navarasu/onedark.nvim'
 Plug 'pablopunk/native-sidebar.vim'
+
+" colorscheme
 Plug 'joshdick/onedark.vim'
+
+"Plug 'EdenEast/nightfox.nvim'
+
+
 " 缩进
 Plug 'Yggdroot/indentLine'
 
@@ -148,6 +154,10 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
  
+" fix below function
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
