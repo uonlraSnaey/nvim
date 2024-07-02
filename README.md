@@ -3,7 +3,7 @@
 -------------
 ## use nvim with lazy and lua
 
-1、解压 nvim 文件到 C:/user/<用户名>/AppData/Local
+1、解压 nvim_lua 文件到 C:/user/<用户名>/AppData/Local，并重命名 为 nvim
 
 2、打开 power shell 输入 nvim 加载配置文件
 
